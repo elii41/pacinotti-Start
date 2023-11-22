@@ -1,32 +1,34 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
+import logo from "./res/logo.svg";
 
 //Dichiarazione Styled Components:
-const Div = styled.div`
-  margin: 100px auto;
-  padding: 50px;
-  background-color: #66A182;
-  border: 2px solid #2E4057;
-  max-width: 700px;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
+
+const Container = styled.div``;
+
+const Navbar = styled.div`
+ background-color : black
 `;
 
-const H1 = styled.h1`
-  color: #2E4057;
+const Logo = styled.img`
+  width: 3rem;
   margin: auto;
-  text-align: center;
-  font-size: 70px;
+  margin-left: 0;
+  filter: invert(1);
 `;
+const ElementContent = 
+
+
 
 const App = () => {
-
-  return(
-    <Div>
-      <H1>Hello world</H1>
-    </Div>
-  )
+  return (
+    <Container>
+      <Navbar>
+        <Logo src={logo} />
+        <ElementContent>Me</ElementContent>
+      </Navbar>
+    </Container>
+  );
 };
 
 export default App;
